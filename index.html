@@ -115,6 +115,15 @@ h3{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:22
 .svc .num{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:#9aa6b5;margin-bottom:14px;transition:.22s}
 .svc p{font-size:14.5px;line-height:1.6;margin:0 0 16px;color:#5b6675;transition:.22s}
 .svc .spec{margin-top:auto;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--navy);border-top:1px solid rgba(6,24,58,.14);padding-top:12px;transition:.22s}
+.svc-cta{grid-column:span 2;background:var(--navy);color:#fff}
+.svc-cta h3,.svc-cta:hover h3{color:#fff}
+.svc-cta h3{font-size:26px}
+.svc-cta .num{color:var(--red);letter-spacing:.18em}
+.svc-cta:hover .num{color:var(--red)}
+.svc-cta p,.svc-cta:hover p{color:#bccbe0;max-width:52ch}
+.svc-cta .spec,.svc-cta:hover .spec{color:#fff;border-color:rgba(255,255,255,.25)}
+.svc-cta::before{background:var(--red);transform:scaleY(1);width:4px}
+.svc-cta:hover{background:#0a2450}
 
 /* split */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
@@ -201,6 +210,7 @@ footer .logo{height:46px;width:auto;margin-bottom:18px;filter:brightness(0) inve
   .rail .cell:nth-child(2n+1){padding-left:0}
   .rail .cell:nth-child(2n){padding-left:26px}
   .svc-grid{grid-template-columns:1fr 1fr}
+  .svc-cta{grid-column:span 2}
   .split{grid-template-columns:1fr;gap:36px}
   .ind{grid-template-columns:repeat(3,1fr)}
   .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
@@ -215,6 +225,7 @@ footer .logo{height:46px;width:auto;margin-bottom:18px;filter:brightness(0) inve
 @media(max-width:600px){
   section{padding:60px 0}
   .svc-grid{grid-template-columns:1fr}
+  .svc-cta{grid-column:auto}
   .ind{grid-template-columns:1fr 1fr}
   .gal{grid-template-columns:1fr;grid-auto-rows:210px}
   .gal .wide,.gal .tall{grid-column:auto;grid-row:auto}
@@ -343,6 +354,12 @@ footer .logo{height:46px;width:auto;margin-bottom:18px;filter:brightness(0) inve
         <div class="num">10</div><h3>Fence Panel Fabrication</h3>
         <p>Large scale and custom wrought iron fencing, gates, bollards, guard rails and carports — powder coated in virtually any color.</p>
         <div class="spec">Fabricated &amp; coated in house</div>
+      </a>
+      <a class="svc svc-cta" href="#quote">
+        <div class="num">Not sure which process?</div>
+        <h3>Send us the part.<br>We'll tell you what it needs.</h3>
+        <p>Most jobs that come through the door need more than one process. Describe the part, or send a drawing or a photo, and we will work out the right sequence and price it.</p>
+        <div class="spec">Request a quote &nbsp;&rarr;</div>
       </a>
     </div>
   </div>
