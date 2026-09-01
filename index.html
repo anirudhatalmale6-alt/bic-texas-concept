@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brooks Industrial Coatings | Metal Finishing, Anodizing &amp; Powder Coating in Austin, TX</title>
+<meta name="description" content="Anodizing, powder coating, zinc plating, passivation, chemical film and steel fabrication under one roof in Austin, Texas. Serving semiconductor, aerospace and medical manufacturers since 1986.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#06183a;
+  --navy-2:#0a2450;
+  --ink:#0d1116;
+  --steel:#151b23;
+  --steel-2:#1d252f;
+  --line:rgba(255,255,255,.11);
+  --line-dark:rgba(6,24,58,.14);
+  --red:#c8202a;
+  --red-hi:#e2333d;
+  --copper:#c98b3a;
+  --paper:#f4f5f7;
+  --paper-2:#e9ebef;
+  --body:#3c4652;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --disp:'Saira Condensed',Impact,sans-serif;
+  --text:'IBM Plex Sans',system-ui,sans-serif;
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* ---------- technical label ---------- */
+.klabel{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+
+/* ---------- utility bar ---------- */
+.util{background:var(--ink);color:#b9c4d2;font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+.util .wrap{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:center;justify-content:space-between;min-height:40px;padding-top:7px;padding-bottom:7px}
+.util .grp{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center}
+.util a{text-decoration:none}
+.util a:hover{color:#fff}
+.util svg{width:13px;height:13px;vertical-align:-2px;margin-right:7px;opacity:.75}
+.util .since{color:#6e7d90}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid rgba(6,24,58,.12);box-shadow:0 1px 0 rgba(6,24,58,.04)}
+header .wrap{display:flex;align-items:center;gap:26px;min-height:82px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;flex:0 0 auto}
+.brand img{height:52px;width:auto}
+nav.main{margin-left:auto;display:flex;gap:26px;align-items:center}
+nav.main a{font-family:var(--disp);text-transform:uppercase;letter-spacing:.07em;font-weight:600;font-size:17px;color:var(--navy);text-decoration:none;padding:6px 0;position:relative}
+nav.main a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--red);transition:right .25s ease}
+nav.main a:hover::after{right:0}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--disp);text-transform:uppercase;letter-spacing:.08em;font-weight:700;font-size:16px;padding:13px 22px;text-decoration:none;border:2px solid transparent;transition:.2s ease;cursor:pointer;background:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-hi)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-navy{border-color:var(--navy);color:var(--navy)}
+.btn-navy:hover{background:var(--navy);color:#fff}
+.btn .ar{transition:transform .2s ease}
+.btn:hover .ar{transform:translateX(4px)}
+.burger{display:none;margin-left:auto;background:none;border:0;padding:8px;cursor:pointer}
+.burger span{display:block;width:26px;height:2px;background:var(--navy);margin:5px 0}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;min-height:min(78vh,660px)}
+.hero-copy{padding:76px 24px 68px;max-width:660px;margin-left:auto;width:100%;position:relative;z-index:2}
+.hero .eyebrow{color:#8fb2e6;display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.hero .eyebrow::before{content:"";width:34px;height:2px;background:var(--red)}
+h1{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:clamp(40px,5.6vw,70px);line-height:.96;letter-spacing:-.005em;margin:0 0 22px;color:#fff}
+h1 .hl{color:#7fa9e8}
+.hero p.lead{font-size:18px;line-height:1.62;color:#c6d3e6;margin:0 0 32px;max-width:52ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero-media{position:relative;background:#000}
+.hero-media img{width:100%;height:100%;object-fit:cover;opacity:.92}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 0%,rgba(6,24,58,.55) 22%,rgba(6,24,58,0) 60%)}
+.hero-tag{position:absolute;left:0;bottom:0;z-index:3;background:var(--red);color:#fff;padding:9px 16px;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+
+/* stat rail */
+.rail{background:var(--navy-2);border-top:1px solid rgba(255,255,255,.09);position:relative;z-index:2}
+.rail .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.rail .cell{padding:26px 22px 26px 0;border-right:1px solid rgba(255,255,255,.09)}
+.rail .cell:last-child{border-right:0}
+.rail .cell:not(:first-child){padding-left:26px}
+.rail .n{font-family:var(--disp);font-weight:700;font-size:34px;line-height:1;color:#fff;text-transform:uppercase}
+.rail .t{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8ba3c6;margin-top:8px}
+
+/* ---------- sections ---------- */
+section{padding:88px 0}
+.sec-head{max-width:720px;margin-bottom:46px}
+.sec-head .klabel{color:var(--red);display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.sec-head .klabel::before{content:"";width:26px;height:2px;background:var(--red)}
+h2{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(30px,3.8vw,46px);line-height:1.03;color:var(--navy);margin:0 0 16px}
+h3{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:22px;line-height:1.12;color:var(--navy);margin:0 0 10px;letter-spacing:.01em}
+.sec-head p{font-size:17px;margin:0}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(6,24,58,.16);border:1px solid rgba(6,24,58,.16)}
+.svc{background:#fff;padding:30px 26px 26px;text-decoration:none;display:flex;flex-direction:column;position:relative;transition:.22s ease;min-height:210px}
+.svc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--red);transform:scaleY(0);transform-origin:top;transition:transform .25s ease}
+.svc:hover{background:var(--navy);}
+.svc:hover::before{transform:scaleY(1)}
+.svc:hover h3,.svc:hover .num{color:#fff}
+.svc:hover p{color:#bccbe0}
+.svc:hover .spec{color:#8fb2e6;border-color:rgba(255,255,255,.22)}
+.svc .num{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:#9aa6b5;margin-bottom:14px;transition:.22s}
+.svc p{font-size:14.5px;line-height:1.6;margin:0 0 16px;color:#5b6675;transition:.22s}
+.svc .spec{margin-top:auto;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--navy);border-top:1px solid rgba(6,24,58,.14);padding-top:12px;transition:.22s}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split.alt{background:var(--navy);color:#fff}
+.frame{position:relative;isolation:isolate}
+.frame img{width:100%;aspect-ratio:4/3;object-fit:cover;position:relative;z-index:2}
+.frame::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--red);z-index:1}
+.bul{list-style:none;padding:0;margin:22px 0 0}
+.bul li{position:relative;padding-left:26px;margin-bottom:10px;font-size:15.5px}
+.bul li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;background:var(--red)}
+
+/* spec table */
+.specs{background:var(--steel);color:#cfd8e4}
+.specs h2{color:#fff}
+.specs .sec-head p{color:#93a3b8}
+.spec-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.spec-table th{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;text-align:left;color:#7f93ad;font-weight:500;padding:0 18px 12px 0;border-bottom:1px solid var(--line)}
+.spec-table td{padding:15px 18px 15px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.spec-table td:first-child{font-family:var(--disp);text-transform:uppercase;font-weight:600;font-size:18px;color:#fff;letter-spacing:.02em;white-space:nowrap}
+.spec-table td.m{font-family:var(--mono);font-size:12.5px;color:#9fb4cd;letter-spacing:.02em}
+.tbl-scroll{overflow-x:auto}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+.gal a{position:relative;overflow:hidden;background:#0d1116;display:block}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;filter:saturate(1.05)}
+.gal a:hover img{transform:scale(1.06)}
+.gal .cap{position:absolute;left:0;bottom:0;right:0;padding:26px 14px 12px;background:linear-gradient(transparent,rgba(6,24,58,.9));color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.gal .tall{grid-row:span 2}
+.gal .wide{grid-column:span 2}
+
+/* industries */
+.ind{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(6,24,58,.16);border:1px solid rgba(6,24,58,.16)}
+.ind div{background:#fff;padding:28px 20px;text-align:center}
+.ind .ico{width:34px;height:34px;margin:0 auto 14px;color:var(--red)}
+.ind .nm{font-family:var(--disp);text-transform:uppercase;font-weight:700;font-size:17px;color:var(--navy);letter-spacing:.03em}
+.ind .idesc{margin:8px 0 0;font-size:13px;line-height:1.5;color:#6b7684}
+
+/* cert slot */
+.cert{border:2px dashed rgba(6,24,58,.3);background:#fff;padding:26px 28px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.cert .lab{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.cert strong{font-family:var(--disp);text-transform:uppercase;font-size:21px;color:var(--navy);display:block;letter-spacing:.02em}
+.cert p{margin:6px 0 0;font-size:14px;max-width:60ch}
+.cert .badges{display:flex;gap:12px;flex:0 0 auto}
+.cert .badge{width:96px;height:66px;border:1px solid rgba(6,24,58,.2);background:var(--paper-2);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:#8894a5;text-align:center;padding:6px}
+
+/* quote band */
+.band{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 2px,transparent 2px 14px)}
+.band .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center;padding-top:64px;padding-bottom:64px}
+.band h2{color:#fff;margin-bottom:12px}
+.band p{color:#c2d1e6;margin:0;font-size:17px}
+.band .acts{display:flex;flex-wrap:wrap;gap:14px;justify-content:flex-end}
+
+/* contact/footer */
+footer{background:var(--ink);color:#93a3b8;padding:70px 0 0;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:52px}
+footer h4{font-family:var(--disp);text-transform:uppercase;color:#fff;font-size:17px;letter-spacing:.06em;margin:0 0 16px}
+footer a{color:#93a3b8;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:9px}
+footer .logo{height:46px;width:auto;margin-bottom:18px;filter:brightness(0) invert(1);opacity:.92}
+.fline{border-top:1px solid var(--line);padding:20px 0;display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:#5f6f83}
+.dl{font-family:var(--mono);font-size:12.5px;line-height:1.9}
+.dl b{color:#c9d5e4;font-weight:500;display:inline-block;min-width:74px}
+
+/* mockup ribbon */
+.ribbon{background:#111820;color:#8d9cb0;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:9px 16px;border-bottom:1px solid rgba(255,255,255,.08)}
+.ribbon b{color:#fff;font-weight:500}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+
+@media(max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{padding:56px 24px 46px;max-width:none;margin:0}
+  .hero-media{min-height:300px;order:-1}
+  .hero-media::after{background:linear-gradient(0deg,var(--navy) 0%,rgba(6,24,58,.25) 55%)}
+  .rail .wrap{grid-template-columns:1fr 1fr}
+  .rail .cell{border-bottom:1px solid rgba(255,255,255,.09)}
+  .rail .cell:nth-child(2n){border-right:0}
+  .rail .cell:nth-child(2n+1){padding-left:0}
+  .rail .cell:nth-child(2n){padding-left:26px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr;gap:36px}
+  .ind{grid-template-columns:repeat(3,1fr)}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
+  .band .wrap{grid-template-columns:1fr}
+  .band .acts{justify-content:flex-start}
+  .fgrid{grid-template-columns:1fr 1fr}
+  nav.main{display:none}
+  .burger{display:block}
+  header .btn{display:none}
+}
+@media(max-width:760px){.util .since{display:none}.ribbon{font-size:10px;letter-spacing:.06em;line-height:1.6}}
+@media(max-width:600px){
+  section{padding:60px 0}
+  .svc-grid{grid-template-columns:1fr}
+  .ind{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:1fr;grid-auto-rows:210px}
+  .gal .wide,.gal .tall{grid-column:auto;grid-row:auto}
+  .fgrid{grid-template-columns:1fr}
+  .util .wrap{justify-content:flex-start}
+  .frame::before{inset:10px -10px -10px 10px}
+}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Design concept prepared by <b>North Austin Web</b> &nbsp;·&nbsp; not a live site &nbsp;·&nbsp; all copy and photography from bic-texas.com</div>
+
+<div class="util">
+  <div class="wrap">
+    <div class="grp">
+      <a href="tel:5129905333"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg>Office 512-990-5333</a>
+      <a href="tel:5129901865">Anodize 512-990-1865</a>
+      <a href="mailto:jbbrooks@bic-texas.com"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>jbbrooks@bic-texas.com</a>
+    </div>
+    <div class="grp">
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>1902 Bench Mark Drive, Austin TX 78728</span>
+      <span class="since">Finishing metal in Austin since 1986</span>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/bic-logo.png" alt="Brooks Industrial Coatings"></a>
+    <nav class="main">
+      <a href="#services">Services</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#industries">Industries</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-red" href="#quote">Request a Quote <span class="ar">&rarr;</span></a>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div id="top" class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="klabel eyebrow">Austin, Texas &nbsp;·&nbsp; Est. 1986</div>
+      <h1>Metal finishing<br>done <span class="hl">in house.</span><br>Start to finish.</h1>
+      <p class="lead">Anodizing, plating, powder coating, blasting and steel fabrication under one roof — so complex parts that need several processes never leave the building, and never wait on another shop's schedule.</p>
+      <div class="hero-cta">
+        <a class="btn btn-red" href="#quote">Request a Quote <span class="ar">&rarr;</span></a>
+        <a class="btn btn-ghost" href="#services">View All Services</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="img/copper-wheel.jpg" alt="Anodized wheel finished at Brooks Industrial Coatings">
+      <div class="hero-tag">Anodized &amp; finished at BIC · Austin</div>
+    </div>
+  </div>
+  <div class="rail">
+    <div class="wrap">
+      <div class="cell"><div class="n">1986</div><div class="t">Finishing since</div></div>
+      <div class="cell"><div class="n">10</div><div class="t">Processes in house</div></div>
+      <div class="cell"><div class="n">20,000<span style="font-size:20px">ft&sup2;</span></div><div class="t">Work area</div></div>
+      <div class="cell"><div class="n">USA</div><div class="t">Clients nationwide</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="klabel">What we do</div>
+      <h2>Ten finishing processes,<br>one building</h2>
+      <p>BIC is able to complete complex jobs that require multiple finishing processes entirely in house — prepared and coated by hand, with the attention to detail critical jobs demand.</p>
+    </div>
+    <div class="svc-grid rv">
+      <a class="svc" href="#quote">
+        <div class="num">01</div><h3>Sulfuric Acid Anodizing</h3>
+        <p>Aluminum oxide build-up for abrasion and corrosion resistance, roughly 336 hours per ASTM B117. Available clear or dyed.</p>
+        <div class="spec">MIL-A-8625 · Type II</div>
+      </a>
+      <a class="svc" href="#quote">
+        <div class="num">02</div><h3>Hard Coat Anodizing</h3>
+        <p>Where surface hardness and abrasion resistance are the main criteria. Far thicker build-up than standard anodizing, dyed or undyed.</p>
+        <div class="spec">MIL-A-8625 · Type III, Class 1 &amp; 2</div>
+      </a>
+      <a class="svc" href="#quote">
+        <div class="num">03</div><h3>Powder Coating &amp; Wet Paint</h3>
+        <p>Commercial, industrial and architectural coatings prepared and coated by hand. Standard and custom colors, metallics, textures and gloss levels.</p>
+        <div class="spec">Polyurethane · Epoxy · C.A.R.C. · MIL Spec</div>
+      </a>
+      <a class="svc" href="#quote">
+        <div class="num">04</div><h3>Zinc Plating</h3>
+        <p>Corrosion protection by barrier and sacrificial anode, without breaking down the substrate's surface integrity.</p>
+        <div class="spec">ASTM B633 · QQ-Z-325 Type I, II, III</div>
+      </a>
+      <a class="svc" href="#quote">
+        <div class="num">05</div><h3>Chemical Film Coating</h3>
+        <p>Chromate conversion coating for aluminum — corrosion protection while keeping conductivity, and better adhesion for later paint.</p>
+        <div class="spec">MIL-C-5541 · Class 1A &amp; Class 3</div>
+      </a>
+      <a class="svc" href="#quote">
+        <div class="num">06</div><h3>Passivation</h3>
+        <p>Removes iron, lead and other contaminants, then accelerates formation of the passive layer that resists corrosion.</p>
+        <div class="spec">Citric &amp; Nitric</div>
+      </a>
+      <a class="svc" href="#quote">
+        <div class="num">07</div><h3>Media Blasting</h3>
+        <p>Compressed air and abrasive media to clean, deburr or prepare a surface. Aluminum oxide, glass bead and plastic media.</p>
+        <div class="spec">Restoration &amp; surface prep</div>
+      </a>
+      <a class="svc" href="#quote">
+        <div class="num">08</div><h3>Silk Screening</h3>
+        <p>Instructions, settings and branding printed directly onto metal or plastic parts — more durable than a label, and fewer parts to inventory.</p>
+        <div class="spec">Metals &amp; plastics</div>
+      </a>
+      <a class="svc" href="#quote">
+        <div class="num">09</div><h3>Steel Fabrication</h3>
+        <p>A full service steel fabrication shop on site with raw material in stock — handrails, custom BBQ grills, patio furniture repair.</p>
+        <div class="spec">In-house shop · Materials stocked</div>
+      </a>
+      <a class="svc" href="#quote">
+        <div class="num">10</div><h3>Fence Panel Fabrication</h3>
+        <p>Large scale and custom wrought iron fencing, gates, bollards, guard rails and carports — powder coated in virtually any color.</p>
+        <div class="spec">Fabricated &amp; coated in house</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY BIC -->
+<section id="about" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <div class="klabel" style="color:var(--red);margin-bottom:14px">Why BIC</div>
+        <h2>Jim Brooks started this shop in 1986. It is still run that way.</h2>
+        <p style="font-size:17px">Brooks Industrial Coatings has been providing customers with metal finishing needs since 1986. Jim Brooks had a vision to offer his customers a quality product with great customer service — and that commitment to exceptional quality and customer service is what lets you know your projects are in reliable hands.</p>
+        <p>We work with clients all over the United States and with large manufacturers here in Austin, alongside local retail customers who need a single part done properly.</p>
+        <ul class="bul">
+          <li>Every process handled in house — no parts shipped between shops</li>
+          <li>Small, medium and large jobs, prepared and coated by hand</li>
+          <li>Named by our customers as the best powder coating provider on quality and turnaround</li>
+        </ul>
+        <div style="margin-top:28px"><a class="btn btn-navy" href="#contact">More About BIC <span class="ar">&rarr;</span></a></div>
+      </div>
+      <div class="frame rv"><img src="img/cabinet.jpg" alt="Fabricated and powder coated cabinet in the BIC shop"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES / SPEC TABLE -->
+<section id="capabilities" class="specs">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="klabel" style="color:var(--red)">Capabilities</div>
+      <h2>Specifications we work to</h2>
+      <p>Buyers search for the spec, not the service name. Every standard already named on BIC's own service pages, in one place.</p>
+    </div>
+    <div class="tbl-scroll rv">
+      <table class="spec-table">
+        <thead><tr><th>Process</th><th>Specification</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr><td>Sulfuric anodize</td><td class="m">MIL-A-8625 Type II</td><td>0.0002&Prime;–0.0003&Prime; build-up plus equal penetration. Clear or dyed — black, green, gold, red, blue. Approx. 336 hrs salt spray per ASTM B117.</td></tr>
+          <tr><td>Hard coat anodize</td><td class="m">MIL-A-8625 Type III, Class 1 &amp; 2</td><td>Typical 0.001&Prime; build-up and 0.001&Prime; penetration. Class 1 undyed, Class 2 dyed. Color varies with alloy, champagne through dark gray.</td></tr>
+          <tr><td>Chemical film</td><td class="m">MIL-C-5541 Class 1A / Class 3</td><td>Chromate conversion on aluminum. Clear or golden finish. Approx. 168 hrs salt spray per ASTM B117. Maintains conductivity.</td></tr>
+          <tr><td>Zinc plating</td><td class="m">ASTM B633 · QQ-Z-325</td><td>Type I, II, III, Class 1, 2 and 3. Gold zinc, clear zinc (RoHS compliant) and black zinc.</td></tr>
+          <tr><td>Passivation</td><td class="m">Citric &amp; Nitric</td><td>Removes iron and lead contamination, accelerates the passive layer.</td></tr>
+          <tr><td>Powder &amp; wet coating</td><td class="m">MIL Spec applications</td><td>Catalyzed polyurethane, epoxy, C.A.R.C. finishes, Lexan hardcoat, automotive finishes, EMI shielding.</td></tr>
+          <tr><td>Media blasting</td><td class="m">Aluminum oxide · Glass bead · Plastic</td><td>Cleaning, deburring and surface preparation prior to coating.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;color:#7f93ad;margin-top:22px;text-transform:uppercase">Every figure above is taken from BIC's existing service pages — nothing added</p>
+  </div>
+</section>
+
+<!-- CERTIFICATION SLOT -->
+<section style="padding:64px 0;background:var(--paper)">
+  <div class="wrap">
+    <div class="cert rv">
+      <div>
+        <div class="lab">Placeholder — for BIC to confirm</div>
+        <strong>Quality certifications</strong>
+        <p>BIC holds ISO 9001:2015 registration and Nadcap accreditation for chemical processing. Both certificates currently published on the website have passed their expiry dates, so this block is left blank pending current copies. Certifications are the first thing an aerospace or semiconductor buyer looks for — this is where they belong.</p>
+      </div>
+      <div class="badges">
+        <div class="badge">Cert<br>badge</div>
+        <div class="badge">Cert<br>badge</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries" style="padding-top:24px">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="klabel">Who we finish for</div>
+      <h2>Industries served</h2>
+      <p>From production runs for national manufacturers down to a single wheel or handrail for a local customer.</p>
+    </div>
+    <div class="ind rv">
+      <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="7" width="10" height="10"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg><div class="nm">Semiconductor</div><p class="idesc">Coating and finishing of machined product</p></div>
+      <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c1.5 2.5 2.5 6 2.5 9.5L21 16v2l-6.5-2-.5 4 2 1.5V23l-4-1-4 1v-1.5L10 20l-.5-4L3 18v-2l6.5-4.5C9.5 8 10.5 4.5 12 2z"/></svg><div class="nm">Aerospace</div><p class="idesc">MIL spec finishes and hard coat anodize</p></div>
+      <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg><div class="nm">Medical</div><p class="idesc">Passivation and clean, conductive finishes</p></div>
+      <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V9l6-4 6 4v12M9 21v-6h6v6M15 13h6v8h-6"/></svg><div class="nm">Architectural</div><p class="idesc">Powder coating for rails, gates and fencing</p></div>
+      <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 4v5M12 15v5M4 12h5M15 12h5"/></svg><div class="nm">Automotive</div><p class="idesc">Wheels, trim and restoration work</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="klabel">Recent work</div>
+      <h2>Parts that left this shop</h2>
+      <p>Real photographs from BIC's own gallery — the strongest asset the current site has, and the one it shows last.</p>
+    </div>
+    <div class="gal rv">
+      <a class="tall" href="#gallery"><img src="img/blue-wheel.jpg" alt="Deep blue anodized alloy wheel"><span class="cap">Anodized wheel</span></a>
+      <a href="#gallery"><img src="img/anodized-parts.jpg" alt="Teal and blue anodized plates with machined disc"><span class="cap">Anodized plate &amp; bracket</span></a>
+      <a href="#gallery"><img src="img/yellow-box.jpg" alt="Yellow powder coated enclosure"><span class="cap">Powder coated enclosure</span></a>
+      <a href="#gallery"><img src="img/blue-rim.jpg" alt="Blue anodized motorcycle rim"><span class="cap">Anodized rim</span></a>
+      <a href="#gallery"><img src="img/blasting.jpg" alt="Media blasting in the BIC booth"><span class="cap">Media blasting</span></a>
+      <a class="wide" href="#gallery"><img src="img/cabinet.jpg" alt="Fabricated steel cabinet"><span class="cap">Fabrication &amp; coating</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE BAND -->
+<div class="band" id="quote">
+  <div class="wrap">
+    <div>
+      <div class="klabel" style="color:#8fb2e6;margin-bottom:12px">Get started</div>
+      <h2>Send us the part. We'll send back a price.</h2>
+      <p>Drawings, a photo or just a description — whatever you have. Ask for a quote or simply learn more about our products and services. We are available to help you with your project.</p>
+    </div>
+    <div class="acts">
+      <a class="btn btn-red" href="#contact">Request a Quote <span class="ar">&rarr;</span></a>
+      <a class="btn btn-ghost" href="tel:5129905333">Call 512-990-5333</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT / FOOTER -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img class="logo" src="img/bic-logo.png" alt="Brooks Industrial Coatings">
+        <p style="margin:0 0 18px;max-width:34ch">Providing customers with metal finishing needs since 1986.</p>
+        <div class="dl">
+          <b>Address</b>1902 Bench Mark Drive<br>
+          <b></b>Austin, TX 78728-7621<br>
+          <b>Office</b><a href="tel:5129905333">512-990-5333</a><br>
+          <b>Anodize</b><a href="tel:5129901865">512-990-1865</a><br>
+          <b>Fax</b>512-990-1007
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Sulfuric Acid Anodizing</a></li>
+          <li><a href="#services">Hard Coat Anodizing</a></li>
+          <li><a href="#services">Powder Coating &amp; Wet Paint</a></li>
+          <li><a href="#services">Zinc Plating</a></li>
+          <li><a href="#services">Chemical Film Coating</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="#services">Passivation</a></li>
+          <li><a href="#services">Media Blasting</a></li>
+          <li><a href="#services">Silk Screening</a></li>
+          <li><a href="#services">Steel Fabrication</a></li>
+          <li><a href="#services">Fence Panel Fabrication</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Request a quote</h4>
+        <p style="margin:0 0 14px">Tell us what you need finished and we will come back to you.</p>
+        <a class="btn btn-red" href="mailto:jbbrooks@bic-texas.com">Email BIC <span class="ar">&rarr;</span></a>
+        <p style="margin:18px 0 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:#5f6f83;text-transform:uppercase">A quote form would sit here</p>
+      </div>
+    </div>
+    <div class="fline">
+      <span>&copy; 2026 Brooks Industrial Coatings · Austin, Texas</span>
+      <span>Design concept · North Austin Web</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// staggered reveal
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.rv'));
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return}
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})
+  },{rootMargin:'0px 0px -80px 0px',threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
+// mobile menu
+(function(){
+  var b=document.querySelector('.burger'),n=document.querySelector('nav.main');
+  if(!b)return;
+  b.addEventListener('click',function(){
+    var open=n.style.display==='flex';
+    if(open){n.style.display='';return}
+    n.style.display='flex';n.style.position='absolute';n.style.top='100%';n.style.left='0';n.style.right='0';
+    n.style.flexDirection='column';n.style.background='#fff';n.style.padding='18px 24px';n.style.gap='14px';
+    n.style.borderBottom='1px solid rgba(6,24,58,.12)';n.style.boxShadow='0 12px 24px rgba(6,24,58,.10)';
+  });
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'&&window.innerWidth<=1000){n.style.display=''}});
+})();
+</script>
+</body>
+</html>
